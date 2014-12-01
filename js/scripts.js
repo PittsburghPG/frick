@@ -32,10 +32,10 @@ function documentReady()
 		invitationBGWidth = 400;
 		
 	} 
-	$('#invitation_textBG, #veranda_textBG, #purplebar').css('width', invitationBGWidth + 'px');
+	$('#invitation_textBG, #veranda_textBG, #purplebar, #brownbar').css('width', invitationBGWidth + 'px');
 	console.log(height);
 	$("#invitation_textBG").css('height', height+'px');
-	$('#invitation_textBG, #veranda_textBG, #purplebar').css('right', -(invitationBGWidth) + 'px');
+	$('#invitation_textBG, #veranda_textBG, #purplebar, #brownbar').css('right', -(invitationBGWidth) + 'px');
 	var invitation2Right = invitationBGWidth/2 - $('#invitation2').width()/2;
 	$('#invitation2').css('right', invitation2Right +'px');
 	$('#coyneimage').css('height', ($('#coyne').height() - 10) + 'px');
@@ -363,6 +363,13 @@ function windowLoad()
 																									$("#membook").attr('src','img/membook' + j + '.png');
 																								})
 																								.fadeIn(300);
+																							});
+																							$("#purple-next").click(function() {
+																								$.scrollTo( '#card', { //scroll to the header that has the next number in its name
+																									duration: 1000,
+																									axis: 'y'
+																								});
+																								$("#brownbar").delay( 1500 ).animate({"right":"0"},1000, function(){});
 																							});
 																						});
 																					});

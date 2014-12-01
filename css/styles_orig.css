@@ -13,12 +13,12 @@ overflow-x:hidden;
 background-color:#1C1608;
 }
 #mask {
-	/*display: none;*/
+	display: none;
 	background: #000; 
 	position: fixed; 
 	left: 0; top: 0; 
 	width: 100%; height: 100%;
-	opacity: 0;
+	opacity: 0.5;
 	z-index: 60;
 }
 
@@ -35,36 +35,18 @@ font-size:10px;
 font-family:"Times", serif;
 }
 
-#first, #invitation, #doorway, #entry, #blueroom, #breakfastroom, #sink, #medicine, #dresser, #reception, #veranda, #diningroom, #friends, #dancing, #parties, #card {
-	/*width: 1500px;*/
-	width: 100%;
-	height: 100vh;
+#first, #invitation, #doorway, #entry, #blueroom, #breakfastroom, #sink, #medicine, #dresser, #reception, #veranda, #diningroom, #friends, #dancing, #parties {
+	width:100%;
+	height: 100%;
 	position: relative;
-	overflow: hidden;
-	margin: 0 auto;
+	
 }
-
-.wrapper-invitation 	{background-color: #C4A2A0;}
-.wrapper-doorway 		{background-color: #8eaca4;}
-.wrapper-entry 			{background-color: #BAA75D;}
-.wrapper-blueroom 		{background-color: #350707;}
-.wrapper-breakfastroom 	{background-color: #c6a155;}
-.wrapper-sink 			{background-color: #FFE1BE;}
-.wrapper-medicine 		{background-color: #FA6060;}
-.wrapper-dresser 		{background-color: #1D0000;}
-.wrapper-reception 		{background-color: #d5bd96;}
-.wrapper-verdanda 		{background-color: #87835e;}
-.wrapper-diningroom 	{background-color: #C79741;}
-.wrapper-friends 		{background-color: #DB7F32;}
-.wrapper-dancing 		{background-color: #fbd3d7;}
-.wrapper-parties 		{background-color: #8386a4;}
 
 img.full {
 	position: absolute;
-	height: auto;
+	height: 100%;
 	margin: 0 auto;
 	opacity: 0;
-	width: 100%; 
 }
 #first1, #invitation1 {
 	z-index: 0;
@@ -85,7 +67,7 @@ img.full {
 	z-index: 30;
 	cursor: pointer;
 }
-#invitation_textBG, #veranda_textBG, #purplebar, #brownbar {
+#invitation_textBG, #veranda_textBG, #purplebar {
 	position: absolute;
 	top: 0;
 	z-index: 30;
@@ -100,7 +82,6 @@ img.full {
 	background-color: #8386a4;
 	min-width: 400px;
 }
-
 #invitation_textBG  p, #veranda_textBG p , #purplebar p {
 	color: #FCFBF0;
 	font-size: 140%;
@@ -179,7 +160,7 @@ padding-top: 70%;
 	background-color: #838383;
 	width: 50%;
 	margin:0px auto;
-	z-index: 9000;
+	z-index: 90;
 	box-shadow:1px 0px 5px gray;
 	padding: 30px 20px 20px 20px;
 	border-radius: 15px;
@@ -264,14 +245,7 @@ cursor:pointer;
 	z-index: 20;
 	cursor: pointer;
 }
-#brownbar {
-	background-color: #484033;
-	min-width: 400px;
-	right: -360px;
-}
-#brownbar .text{
-	color: white;
-}
+
 #blueroom_bar .text {
 	position: absolute;
 	top: 50px;
@@ -1149,63 +1123,6 @@ top:0px;
 	cursor: pointer;
 	opacity: 1;
 }	
-
-.mobile-notice {
-	display: none;
-}
-
-@media only screen and (min-width : 1366px) and (max-width : 1499px) {
-	#first, #invitation, #doorway, #entry, #blueroom, #breakfastroom, #sink, #medicine, #dresser, #reception, #veranda, #diningroom, #friends, #dancing, #parties {
-		/*width: 1350px;*/
-	}
-}
-
-@media only screen and (min-width : 1280px) and (max-width : 1366px) {
-	#first, #invitation, #doorway, #entry, #blueroom, #breakfastroom, #sink, #medicine, #dresser, #reception, #veranda, #diningroom, #friends, #dancing, #parties {
-		/*width: 1280px;*/
-	}
-}
-
-@media only screen and (min-width : 1024px) and (max-width : 1279px) {
-	#first, #invitation, #doorway, #entry, #blueroom, #breakfastroom, #sink, #medicine, #dresser, #reception, #veranda, #diningroom, #friends, #dancing, #parties {
-		/*width: 1024px;*/
-	}
-}
-
-@media only screen and (min-width : 768px) and (max-width : 1023px) {
-	#first, #invitation, #doorway, #entry, #blueroom, #breakfastroom, #sink, #medicine, #dresser, #reception, #veranda, #diningroom, #friends, #dancing, #parties {
-		/*width: 768px;*/
-	}
-	
-	.mobile-notice {
-		display: block;
-		background: #6B0D0D;
-		color: #fff;
-		width: 100%;
-		padding: 5px;
-		text-align: center;
-		border-radius: 25px;
-		font-family: Georgia, serif;
-		font-size: .90rem;
-	}
-}
-
-@media only screen and (max-width : 767px) {
-	#first, #invitation, #doorway, #entry, #blueroom, #breakfastroom, #sink, #medicine, #dresser, #reception, #veranda, #diningroom, #friends, #dancing, #parties {
-		/*width: 500px;*/
-	}
-	
-	.mobile-notice {
-		display: block;
-		background: #6B0D0D;
-		color: #fff;
-		width: 100%;
-		text-align: center;
-		border-radius: 25px;
-		font-family: Georgia, serif;
-		font-size: .90rem;
-	}
-}
 	
 @media all and (max-width: 1000px) {
 
